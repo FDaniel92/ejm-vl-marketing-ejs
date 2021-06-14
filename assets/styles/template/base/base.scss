@@ -1,0 +1,28 @@
+body {
+    background: #f3f3f3;
+    box-sizing: border-box;
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+        border: none;
+    }
+    &.login {
+        background-color: #c03;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 50%;
+            background: #1e1e1e;
+        }
+    }
+    &.home {
+        background-color: white;
+        &:before {
+            content: "";
+        }
+    }
+}

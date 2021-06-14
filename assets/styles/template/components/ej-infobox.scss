@@ -1,0 +1,77 @@
+.ej-infobox {
+    position: relative;
+    box-shadow: 0 0 30px 0 rgba(23, 22, 22, 0.2);
+    margin-bottom: 50px;
+  
+    &__content {
+      padding: 50px 20px 0 50px;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100%;
+      background: white;
+      z-index: 1001;
+
+      @media (min-width: $lg-devices) {
+        width: 700px;
+        padding: 70px 0 0 100px;
+      }
+  
+      h1 {
+        font-size: 40px;
+        color: $color-3;
+        font-family: PlayFairDisplay;
+        text-transform: uppercase;
+        line-height: 1.1;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+
+        @media (min-width: $xl-devices) {
+          max-width: 360px;
+          font-size: $font-large;
+        }
+      }
+  
+      p {
+        font-family: SourceSansPro;
+        font-size: $font-medium;
+        width: 100%;
+        max-width: 100%;
+        line-height: 1.5;
+        color: #1e1e1e;
+
+        @media (min-width: $lg-devices) {
+          max-width: 370px;
+        }
+      }
+  
+      hr {
+        width: 100px;
+        margin: 40px 0 0 0;
+        border-top: 2px solid $color-3;
+      }
+    }
+
+    &__image {
+      background: #ffff url("~@/assets/images/hero_877.jpg");
+      width: 100%;
+      height: 490px;
+      position: relative;
+      z-index: 10;
+      background-repeat: no-repeat;
+      background-size: 635px;
+      background-position: center;
+
+      @media (min-width: $md-devices) {
+        background-position-x: -80px;
+      }
+      
+      @media (min-width: $lg-devices) {
+        background-position-x: 50px;
+      }
+
+      @media (min-width: $xl-devices) {
+        background-position: right;
+      }
+    }
+  }

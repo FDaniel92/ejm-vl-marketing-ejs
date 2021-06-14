@@ -1,0 +1,156 @@
+@import "assets/styles/template/variables/variables.scss";
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-mobile {
+    @media (max-width: $lg-devices) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.xs-column {
+    @media (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.sm-column {
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.md-column {
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+.lg-column {
+    @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        &.lg-column-centered {
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.hide-br-mobile {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.hide-lg {
+    @media (max-width: $lg-devices) {
+        display: none;
+    }
+}
+
+.hide-md {
+    @media (max-width: $md-devices) {
+        display: none;
+    }
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.align-center {
+    justify-content: center;
+}
+
+.container-fluid {
+    width: 100%;
+    position: relative;
+    &.right-red-layout {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+            height: 98px;
+            background: $color-2;
+            display: block;
+            @media (min-width: $md-devices) {
+                width: 40%;
+            }
+        }
+        &--big {
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 40%;
+                height: 400px;
+                background: $color-2;
+            }
+        }
+    }
+
+    &.left-red-layout {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: $color-2;
+        }
+    }
+
+    &.right-white-layout {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: $color-1;
+        }
+    }
+}
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $lg-devices) {
+        width: 960px;
+    }
+
+    @media (min-width: $xl-devices) {
+        width: 1170px;
+    }
+}
+
+.dark-bg {
+    background: $color-4;
+    padding: 100px 0 135px 0;
+    a {
+        background: $color-5;
+    }
+}
+
+.relative {
+    position: relative;
+}

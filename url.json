@@ -1,0 +1,14 @@
+{
+  "development": {
+    "backend": "http://localhost:3001",
+    "frontend": "http://localhost:300"
+  },
+  "staging": {
+    "backend": "http://localhost:3001",
+    "frontend": "http://localhost:300"
+  },
+  "production": {
+    "backend": "http://localhost:3001",
+    "frontend": "http://localhost:3001"
+  }
+}

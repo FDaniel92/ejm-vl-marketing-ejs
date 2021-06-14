@@ -1,0 +1,148 @@
+.ej-product-box {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  position: relative;
+  margin-right: auto;
+
+  @media (min-width: $md-devices) {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+  }
+
+  @media (min-width: $xl-devices) {
+    width: 270px;
+    min-width: 270px;
+    max-width: 270px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover hr {
+    margin: 40px 0 30px 0;
+  }
+
+  &:hover .ej-product-box__content {
+    display: block;
+  }
+
+  hr {
+    width: 70px;
+    margin: 100px 0 30px 0;
+    border-top: 1px solid $color-3;
+  }
+
+  &__wrapper {
+    background: $color-4;
+    padding: 30px;
+    border-bottom: 4px solid $color-3;
+    z-index: 1000;
+    position: relative;
+    left: 0;
+    right: 0;
+    @media (min-width: $md-devices) {
+      position: absolute;
+    }
+  }
+
+  &__image {
+    width: 47px;
+    height: 42px;
+  }
+
+  &__content {
+    color: $color-3;
+    font-size: 15px;
+    font-family: SourceSansPro;
+    line-height: 1.15;
+    display: none;
+    transition: 0.8s ease-in-out;
+
+    p {
+      margin: 30px 0 30px 0;
+    }
+
+    a {
+      color: $color-3;
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid $color-3;
+      border-radius: 5px;
+      transition: 0.25s ease-in-out;
+      &:hover {
+        background: $color-3;
+        color: $color-4;
+      }
+    }
+  }
+
+  &__name {
+    color: $color-3;
+    font-size: $font-small;
+    font-family: SourceSansProBold;
+  }
+}
+
+.mobile-services {
+  display: block;
+  padding: 0 20px;
+  font-family: SourceSansPro;
+  box-sizing: border-box;
+
+  &--connect {
+    margin: 100px 0;
+    @media (min-width: 993px) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 993px) {
+    display: none;
+  }
+  .mobile-ej-product-box {
+    background: $color-4;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 5px solid $color-3;
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &__wrapper {
+      img {
+        width: 50px;
+        height: auto;
+      }
+      a {
+        color: $color-3;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid #aa8961;
+        border-radius: 5px;
+        height: fit-content;
+        transition: 0.25s ease-in-out;
+        &:hover {
+          background: $color-3;
+          color: $color-4;
+        }
+      }
+      .row {
+        justify-content: space-between;
+      }
+      hr {
+        width: 70px;
+        margin: 100px 0 30px 0;
+        border-top: 1px solid $color-3;
+      }
+    }
+    &__name {
+      color: $color-3;
+      font-size: $font-small;
+      font-family: SourceSansProBold;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.ej-big-infobox {
+  background: white;
+  box-shadow: -20px -10px 30px -22px rgba(23, 22, 22, 0.2);
+  z-index: 10;
+  position: relative;
+  margin: 50px 0 0 auto;
+  padding: 50px 0 0 0;
+  background-image: none;
+  height: auto;
+
+  @media (min-width: $lg-devices) {
+    background-image: url("~@/assets/images/hero_2_890x705.jpg");
+    background-size: 75% 80%;
+    background-repeat: no-repeat;
+    background-position: -100px bottom;
+    padding: 50px 0 50px 0;
+  }
+
+  h2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0 0 20px;
+    font-family: PlayFairDisplay;
+    font-size: 40px;
+    color: $color-3;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    @media (min-width: $md-devices) {
+      margin-left: auto;
+      max-width: 570px;
+      font-size: $font-extralarge;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    @media (min-width: $md-devices) {
+      padding: 0;
+    }
+  
+  }
+
+  &__line {
+    hr {
+      width: 100px;
+      border: 1px solid $color-3;
+      margin: 5px 30px 0 0;
+    }
+  }
+
+  &__main-title {
+    font-size: $font-medium;
+    color: $color-3;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: SourceSansProBold;
+  }
+
+  &__paragraph {
+    font-size: $font-medium;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-family: SourceSansPro;
+  }
+}
+.ej-big-infobox-image {
+  display: block;
+  width: 100%;
+  @media (min-width: $lg-devices) {
+    display: none;
+  }
+}
